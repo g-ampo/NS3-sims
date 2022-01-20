@@ -31,4 +31,33 @@ cd to the `ns-3.28` folder, which is inside the `ns3-allinone-3.35` folder.
 Congrats, ns3 is successfully installed.
 
 ## Running a simulation
-### Comparison of MANET routing protocols
+
+Download the contents of the "scratch" folder in this github repo, and place them inside the `/ns-allinone-3.35/ns-3.35/scratch` folder of your NS3 installation.
+
+### Manet-routing-compare
+
+The original version of this script uses the Random Waypoint Mobility Model.
+
+The 'v3' version of this script has been modified to use the Gauss Markov Mobility Model.
+
+Set `m_protocol` inside the code (line 113) to various values to control the routing protocol:
+
+`m_protocol (1)`: OLSR
+
+`m_protocol (2)`: AODV
+
+`m_protocol (3)`: DSDV
+
+`m_protocol (4)`: DSR
+
+Open a terminal and navigate to the ns-3.35 folder:
+
+`cd ~/ns-allinone-3.35/ns-3.35`
+
+Run the simulation:
+
+`./waf --run scratch/manet-routing-compare` (random waypoint mobility model)
+
+or:
+
+`./waf --run scratch/manet-routing-compare-v3` (gaus markov mobility model)
