@@ -1,0 +1,6 @@
+set terminal pdf
+set output "Packetrate.pdf"
+set title "Received Rate and Packets Received"
+set xlabel "Simulated Seconds"
+set ylabel "Receive Rate"
+plot "GNUPLOT-manet-routing.output.csv" using 1:2 with lines title "Receive Rate", "GNUPLOT-manet-routing.output.csv" using 1:3 with lines title "Packets Received"
