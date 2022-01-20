@@ -76,6 +76,8 @@ or:
 
 `./waf --run scratch/manet-routing-compare-v3` (gaus markov mobility model)
 
+Run the simulation twice: once for e.g., AODV, and once for OLSR. Do not neglect to change the output file name by setting it anew at `m_CSVfileName ("manet-routing-compare-v3.csv")`, at line 117.
+
 ## Simulation Outputs
 
 After running the simulation, in the directory /ns-allinone-3.35/ns-3.35 there should have been created the following files:
@@ -83,6 +85,8 @@ After running the simulation, in the directory /ns-allinone-3.35/ns-3.35 there s
 1. manet-routing.output.csv
 2. manet-routing.output.flowmon
 3. manet-routing.output.mob
+
+### Flow statistics
 
 Lets visualise the flow statistics of our simulation.
 
@@ -94,7 +98,26 @@ run:
 
 `python3 flow.py manet-routing.output.flowmon`
 
+repeat this for both your AODV and OLSR files.
+
 In the same directory, a new file "results.pdf" will be created.
 
 ![image](https://user-images.githubusercontent.com/71447362/150393845-96709b52-78d3-43fb-ad46-2f999e9238e2.png)
 
+### Receive rate
+
+For the packet receive rate, we will use the script found in the "Simulation results processing" folder:
+
+``
+set terminal pdf 
+set output "Packetrate.pdf"
+set title "Receive Rate"
+set xlabel "Simulated Seconds"
+set ylabel "Receive Rate"
+plot "GNUPLOT-manet-routing.output.csv" using 1:2 with lines title "AODV", "OLSR.csv" using 1:2 with lines title "OLSR"
+
+set title "Packets Received"
+set xlabel "Simulated Seconds"
+set ylabel "No of Packets Received"
+plot "AODV.csv" using 1:3 with lines title "AODV", "OLSR.csv" using 1:3 with lines title "OLSR"
+``
