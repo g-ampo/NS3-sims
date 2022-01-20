@@ -83,3 +83,15 @@ After running the simulation, in the directory /ns-allinone-3.35/ns-3.35 there s
 1. manet-routing.output.csv
 2. manet-routing.output.flowmon
 3. manet-routing.output.mob
+
+Lets visualise the flow statistics of our simulation.
+
+Copy the contents of the "Simulation results processing" folder inside the directory containing the 3 files mentioned above.
+
+We will use the flow.py script and the manet-routing.output.flowmon file mentioned above.
+
+run:
+
+`python3 flow.py manet-routing.output.flowmon`
+
+In the same directory, a new file "results.pdf" will be created.
