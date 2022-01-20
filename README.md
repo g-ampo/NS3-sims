@@ -30,11 +30,25 @@ cd to the `ns-3.28` folder, which is inside the `ns3-allinone-3.35` folder.
 
 Congrats, ns3 is successfully installed.
 
-## Running a simulation
+## Manet routing protocol comparison
 
 Download the contents of the "scratch" folder in this github repo, and place them inside the `/ns-allinone-3.35/ns-3.35/scratch` folder of your NS3 installation.
 
-### Manet-routing-compare
+### Running the simulation
+
+By default, the simulations run with following parameters:
+1. number of nodes: 50
+2. Number of sinks: 10
+3. Propagation Model: ConstantSpeedPropagationDelay
+4. Propagation Loss Model: Friis
+5. Position Allocator: RandomRectangularPositionAllocator
+6. MAC: AdhocWifiMAC
+7. MAC Standard: 802.11b
+8. Throughput: 2kbps
+9. Total simulation time: 200 sec
+10. Node velocity: 20m/s
+11. Node pause time: 0
+12. Protocol: OLSR/AODV/DSDV/DSR
 
 The original version of this script uses the Random Waypoint Mobility Model.
 
@@ -61,3 +75,11 @@ Run the simulation:
 or:
 
 `./waf --run scratch/manet-routing-compare-v3` (gaus markov mobility model)
+
+## Simulation Outputs
+
+After running the simulation, in the directory /ns-allinone-3.35/ns-3.35 there should have been created the following files:
+
+1. manet-routing.output.csv
+2. manet-routing.output.flowmon
+3. manet-routing.output.mob
