@@ -95,3 +95,6 @@ run:
 `python3 flow.py manet-routing.output.flowmon`
 
 In the same directory, a new file "results.pdf" will be created.
+
+![image](https://user-images.githubusercontent.com/71447362/150393845-96709b52-78d3-43fb-ad46-2f999e9238e2.png)
+
