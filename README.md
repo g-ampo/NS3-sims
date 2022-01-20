@@ -27,3 +27,8 @@ cd to the `ns-3.28` folder, which is inside the `ns3-allinone-3.35` folder.
 `./test.py -c core`
 
 `./waf --run hello-simulator`
+
+Congrats, ns3 is successfully installed.
+
+## Running a simulation
+### Comparison of MANET routing protocols
