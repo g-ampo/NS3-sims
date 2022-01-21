@@ -108,7 +108,7 @@ In the same directory, a new file "results.pdf" will be created.
 
 For the packet receive rate, we will use the script found in the "Simulation results processing" folder:
 
-``
+```
 set terminal pdf 
 set output "Packetrate.pdf"
 set title "Receive Rate"
@@ -120,4 +120,4 @@ set title "Packets Received"
 set xlabel "Simulated Seconds"
 set ylabel "No of Packets Received"
 plot "AODV.csv" using 1:3 with lines title "AODV", "OLSR.csv" using 1:3 with lines title "OLSR"
-``
+```
