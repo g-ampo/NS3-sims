@@ -99,7 +99,3 @@ set xlabel "Simulated Seconds"
 set ylabel "No of Packets Received"
 plot "AODV.csv" using 1:3 with lines title "AODV", "OLSR.csv" using 1:3 with lines title "OLSR"
 ```
-
-PUBLICATIONS:
-1. Telfor Journal, http://journal.telfor.rs/Published/Vol10No1/Vol10No1_A4.pdf
-2. Telfor conference, https://ieeexplore.ieee.org/document/8249315, DOI: 10.1109/TELFOR.2017.8249315
