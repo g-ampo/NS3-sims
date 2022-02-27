@@ -75,6 +75,7 @@
 #include "ns3/olsr-module.h"
 #include "ns3/dsdv-module.h"
 #include "ns3/dsr-module.h"
+#include "ns3/flow-monitor-module.h"
 #include "ns3/applications-module.h"
 #include "ns3/yans-wifi-helper.h"
 
