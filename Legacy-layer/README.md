@@ -91,7 +91,7 @@ plot "AODV.csv" using 1:3 with lines title "AODV", "OLSR.csv" using 1:3 with lin
 ```
 Steps:
 1. Open the .csv file created during the simulation.
-2. Replace all semicolons (";") with an empty space (" "). You can do this by opening the csv file with a text editor, pressing ctr + h and replacing ";" with " ".
+2. Replace all comas (",") with an empty space (" "). You can do this by opening the csv file with a text editor, pressing ctr + h and replacing "," with " ".
 3. Place the modified csv file inside the same folder containing the gluplot script above.
 4. Run the gnuplot.code script: `gnuplot gnuplot.code`
 5. If the process is successful, the directory will now contain a pdf file similar to the one below.
