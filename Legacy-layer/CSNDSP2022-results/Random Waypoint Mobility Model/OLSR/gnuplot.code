@@ -1,0 +1,11 @@
+set terminal pdf 
+set output "Packetrate.pdf"
+set title "Receive Rate"
+set xlabel "Simulated Seconds"
+set ylabel "Receive Rate"
+plot "AODV.csv" using 1:2 with lines title "AODV", "OLSR.csv" using 1:2 with lines title "OLSR"
+
+set title "Packets Received"
+set xlabel "Simulated Seconds"
+set ylabel "No of Packets Received"
+plot "AODV.csv" using 1:3 with lines title "AODV", "OLSR.csv" using 1:3 with lines title "OLSR"

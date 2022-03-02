@@ -1,0 +1,12 @@
+set terminal pdf 
+set output "Packetrate.pdf"
+set title "OLSR vs AODV: PDR under Random Waypoint Mobility Model"
+set xlabel "Simulated Seconds"
+set ylabel "PDR (%)"
+plot "AODV.csv" using 1:2 with lines title "AODV", "OLSR.csv" using 1:2 with lines title "OLSR"
+
+set output "PacketsReceivedAbs.pdf"
+set title "Packets Received"
+set xlabel "Simulated Seconds"
+set ylabel "No of Packets Received"
+plot "AODV.csv" using 1:3 with lines title "AODV", "OLSR.csv" using 1:3 with lines title "OLSR"
