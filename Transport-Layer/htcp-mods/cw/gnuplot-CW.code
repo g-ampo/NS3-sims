@@ -1,0 +1,10 @@
+set terminal pdf 
+#set key above vertical maxrows 3
+#set key font ",6"
+set output "CW-SHTCP.pdf"
+#set title "HTCP vs S-HTCP - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+
+plot "cw_TcpHtcp.csv" using 1:2 with lines title "HTCP", "cw_TcpHtcpfeik.csv" using 1:2 with lines title "S-HTCP"
+	

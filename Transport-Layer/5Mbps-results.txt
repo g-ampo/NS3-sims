@@ -1,0 +1,133 @@
+TcpNewReno
+*** Flow monitor statistics ***
+  Tx Packets:   96632
+  Tx Bytes:   56817124
+  Offered Load: 4.54539 Mbps
+  Rx Packets:   96519
+  Rx Bytes:   56750680
+  Throughput: 4.54008 Mbps
+  Mean delay:   0.0387677
+  Mean jitter:   0.00100378
+
+TcpHybla
+*** Flow monitor statistics ***
+  Tx Packets:   97510
+  Tx Bytes:   57334348
+  Offered Load: 4.58682 Mbps
+  Rx Packets:   97363
+  Rx Bytes:   57247912
+  Throughput: 4.57987 Mbps
+  Mean delay:   0.0568166
+  Mean jitter:   0.00100583
+
+TcpHighSpeed
+*** Flow monitor statistics ***
+  Tx Packets:   97563
+  Tx Bytes:   57365512
+  Offered Load: 4.58927 Mbps
+  Rx Packets:   97364
+  Rx Bytes:   57248500
+  Throughput: 4.57992 Mbps
+  Mean delay:   0.0702925
+  Mean jitter:   0.000996754
+
+TcpHtcp
+*** Flow monitor statistics ***
+  Tx Packets:   97498
+  Tx Bytes:   57327292
+  Offered Load: 4.58626 Mbps
+  Rx Packets:   97363
+  Rx Bytes:   57247912
+  Throughput: 4.57987 Mbps
+  Mean delay:   0.0433741
+  Mean jitter:   0.00101099
+
+TcpVegas
+*** Flow monitor statistics ***
+  Tx Packets:   97438
+  Tx Bytes:   57292476
+  Offered Load: 4.58348 Mbps
+  Rx Packets:   97360
+  Rx Bytes:   57246612
+  Throughput: 4.57973 Mbps
+  Mean delay:   0.00530319
+  Mean jitter:   0.00101012
+
+TcpScalable
+*** Flow monitor statistics ***
+  Tx Packets:   96967
+  Tx Bytes:   57014248
+  Offered Load: 4.56115 Mbps
+  Rx Packets:   96676
+  Rx Bytes:   56843140
+  Throughput: 4.54746 Mbps
+  Mean delay:   0.0933943
+  Mean jitter:   0.000896728
+
+TcpVeno
+*** Flow monitor statistics ***
+  Tx Packets:   96632
+  Tx Bytes:   56817124
+  Offered Load: 4.54539 Mbps
+  Rx Packets:   96521
+  Rx Bytes:   56751856
+  Throughput: 4.54017 Mbps
+  Mean delay:   0.0393442
+  Mean jitter:   0.00100333
+
+TcpBic
+*** Flow monitor statistics ***
+  Tx Packets:   96238
+  Tx Bytes:   56584524
+  Offered Load: 4.52684 Mbps
+  Rx Packets:   95951
+  Rx Bytes:   56415768
+  Throughput: 4.5133 Mbps
+  Mean delay:   0.0848061
+  Mean jitter:   0.000920984
+
+TcpYeah
+*** Flow monitor statistics ***
+  Tx Packets:   96624
+  Tx Bytes:   56813172
+  Offered Load: 4.54507 Mbps
+  Rx Packets:   96517
+  Rx Bytes:   56750256
+  Throughput: 4.54005 Mbps
+  Mean delay:   0.0379824
+  Mean jitter:   0.00100301
+
+TcpIllinois
+*** Flow monitor statistics ***
+  Tx Packets:   97498
+  Tx Bytes:   57327292
+  Offered Load: 4.58621 Mbps
+  Rx Packets:   97364
+  Rx Bytes:   57248500
+  Throughput: 4.57992 Mbps
+  Mean delay:   0.0523803
+  Mean jitter:   0.000995468
+
+TcpWestwoodPlus
+*** Flow monitor statistics ***
+  Tx Packets:   97284
+  Tx Bytes:   57201924
+  Offered Load: 4.57621 Mbps
+  Rx Packets:   97169
+  Rx Bytes:   57134304
+  Throughput: 4.57077 Mbps
+  Mean delay:   0.0337995
+  Mean jitter:   0.00102515
+
+
+TcpCubic
+*** Flow monitor statistics ***
+  Tx Packets:   97440
+  Tx Bytes:   57293652
+  Offered Load: 4.58358 Mbps
+  Rx Packets:   97361
+  Rx Bytes:   57247200
+  Throughput: 4.57978 Mbps
+  Mean delay:   0.0172075
+  Mean jitter:   0.00101267
+

@@ -1,0 +1,76 @@
+set terminal pdf 
+set output "CW-Hybla.pdf"
+set title "TCP Hybla - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpHybla.dat" using 1:2 with lines title "TCP-Hybla"
+
+
+set output "CW-HighSpeed.pdf"
+set title "TCP High Speed - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpHighSpeed.dat" using 1:2 with lines title "TCP-HighSpeed",
+
+
+set output "CW-HTCP.pdf"
+set title "TCP HTCP - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpHtcp.dat" using 1:2 with lines title "TCP-HTCP",
+
+set output "CW-Vegas.pdf"
+set title "TCP Vegas - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpVegas.dat" using 1:2 with lines title "TCP-Vegas",
+
+set output "CW-Cubic.pdf"
+set title "TCP Cubic - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpCubic.dat" using 1:2 with lines title "TCP-Cubic",
+
+set output "CW-Scalable.pdf"
+set title "TCP Scalable - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpScalable.dat" using 1:2 with lines title "TCP-Scalable",
+
+set output "CW-Veno.pdf"
+set title "TCP Veno - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpVeno.dat" using 1:2 with lines title "TCP-Veno",
+
+set output "CW-Bic.pdf"
+set title "TCP Bic - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpBic.dat" using 1:2 with lines title "TCP-Bic", 
+
+set output "CW-Yeah.pdf"
+set title "TCP Yeah - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpYeah.dat" using 1:2 with lines title "TCP-Yeah",
+
+set output "CW-Illinois.pdf"
+set title "TCP Illinois - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpIllinois.dat" using 1:2 with lines title "TCP-Illinois", 
+
+
+set output "CW-WestwoodPlus.pdf"
+set title "TCP WestwoodPlus - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpWestwoodPlus.dat" using 1:2 with lines title "TCP-Westwood Plus"
+
+set output "CW-NewReno.pdf"
+set title "TCP NewReno - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+plot "cw_TcpNewReno.dat" using 1:2 with lines title "TCP-New Reno"
+	

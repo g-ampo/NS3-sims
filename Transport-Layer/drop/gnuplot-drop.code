@@ -1,0 +1,13 @@
+set terminal pdf 
+#set key above vertical maxrows 3
+#set key font ",6"
+set output "drop-tcp-variants.pdf"
+set title "TCP variants - Packet Drops"
+set xlabel "Simulated Seconds"
+set ylabel "Packet Drops"
+
+#plot "drop_TcpCubic.dat" using 1:2 with lines title "TCP-Cubic", "drop_TcpNewReno.dat" using 1:2 with lines title "TCP New Reno"
+	
+
+
+plot "drop_TcpNewReno.dat" using 1:2 with lines title "New Reno", "drop_TcpHybla.dat" using 1:2 with lines title "Hybla", "drop_TcpHighSpeed.dat" using 1:2 with lines title "High Speed", "drop_TcpHtcp.dat" using 1:2 with lines title "HTCP", "drop_TcpVegas.dat" using 1:2 with lines title "Vegas", "drop_TcpScalable.dat" using 1:2 with lines title "Scalable", "drop_TcpVeno.dat" using 1:2 with lines title "Veno", "drop_TcpBic.dat" using 1:2 with lines title "BIC", "drop_TcpYeah.dat" using 1:2 with lines title "YeAH", "drop_TcpCubic.dat" using 1:2 with lines title "CUBIC", "drop_TcpWestwoodPlus.dat" using 1:2 with lines title "Westwood Plus", "drop_TcpIllinois.dat" using 1:2 with lines title "Illinois"

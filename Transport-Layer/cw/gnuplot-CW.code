@@ -1,0 +1,12 @@
+set terminal pdf 
+set key above vertical maxrows 3
+set key font ",6"
+set output "CW-tcp-variants.pdf"
+set title "TCP Variants - Congestion Window"
+set xlabel "Simulated Seconds"
+set ylabel "Congestion Window - MSS"
+
+#plot "cw_TcpCubic.dat" using 1:2 with lines title "TCP-Cubic", "cw_TcpNewReno.dat" using 1:2 with lines title "TCP New Reno"
+
+plot "cw_TcpHybla.dat" using 1:2 with lines title "TCP-Hybla", "cw_TcpHighSpeed.dat" using 1:2 with lines title "TCP-HighSpeed", "cw_TcpHtcp.dat" using 1:2 with lines title "TCP-HTCP", "cw_TcpVegas.dat" using 1:2 with lines title "TCP-Vegas", "cw_TcpScalable.dat" using 1:2 with lines title "TCP-Scalable", "cw_TcpVeno.dat" using 1:2 with lines title "TCP-Veno", "cw_TcpBic.dat" using 1:2 with lines title "TCP-Bic", "cw_TcpYeah.dat" using 1:2 with lines title "TCP-Yeah", "cw_TcpIllinois.dat" using 1:2 with lines title "TCP-Illinois", "cw_TcpCubic.dat" using 1:2 with lines title "TCP-Cubic", "cw_TcpWestwoodPlus.dat" using 1:2 with lines title "TCP-Westwood Plus", "cw_TcpNewReno.dat" using 1:2 with lines title "TCP New Reno"
+	
